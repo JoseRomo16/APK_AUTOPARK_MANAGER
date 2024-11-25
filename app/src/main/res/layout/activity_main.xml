@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/app_name_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="AutoPark Manager"
+        android:textAlignment="gravity"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <Button
+        android:id="@+id/buttonVehicleEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingreso Vehículos"
+        android:onClick="navigateToVehicleEntry"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/buttonVehicleExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salida Vehículos"
+        android:layout_marginTop="16dp"
+        android:onClick="navigateToVehicleExit"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonReports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reportes"
+        android:layout_marginTop="16dp"
+        android:onClick="navigateToReports"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+</LinearLayout>
